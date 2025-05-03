@@ -18,7 +18,7 @@ const App = () => {
       {songs.map((song, index) => {
         return (
           <div
-            className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-2xl w-[300px] max-w-[300px]"
+            className="flex flex-col items-center justify-center bg-white p-4 rounded-xl shadow-2xl w-[300px] max-w-[300px] text-center"
             key={index}
           >
             <img
@@ -34,11 +34,11 @@ const App = () => {
               controls
             ></audio>
             <div className="flex justify-center items-center pb-2">
-              <button className="font-bold cursor-pointer text-3xl mt-1">
+              <button className="font-bold cursor-pointer text-3xl mt-1 mr-2">
                 ⏮️
               </button>
               <button
-                className="font-bold cursor-pointer text-3xl mt-1"
+                className="font-bold cursor-pointer text-3xl mt-1 mr-2"
                 onClick={togglePlay}
               >
                 {isPlaying ? "⏸️" : "▶️"}
