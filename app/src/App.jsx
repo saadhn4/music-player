@@ -26,14 +26,14 @@ const App = () => {
               src={song.img}
               alt="song-pic"
             />
-            <p className="my-3 font-semibold">{song.title}</p>
+            <p className="mt-3 font-semibold">{song.title}</p>
             <audio
               className="hidden"
               ref={audioRef}
               src={song.track}
               controls
             ></audio>
-            <div className="flex justify-center items-center pb-2">
+            <div className="flex justify-center items-center pb-2 mt-3">
               <button className="font-bold cursor-pointer text-3xl mr-2">
                 ⏮️
               </button>
