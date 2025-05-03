@@ -33,7 +33,7 @@ const App = () => {
               src={song.track}
               controls
             ></audio>
-            <div className="flex justify-center items-center pb-2 mt-3">
+            <div className="flex justify-center items-center pb-2 mt-2">
               <button className="font-bold cursor-pointer text-3xl mr-2">
                 ⏮️
               </button>
