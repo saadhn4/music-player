@@ -14,7 +14,7 @@ const App = () => {
     }
   }
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-100">
+    <div className="h-screen flex flex-col justify-center items-center bg-gray-100 px-[1rem]">
       {songs.map((song, index) => {
         return (
           <div
