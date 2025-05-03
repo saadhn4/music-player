@@ -26,7 +26,7 @@ const App = () => {
               src={song.img}
               alt="song-pic"
             />
-            <p className="mt-4 font-semibold">{song.title}</p>
+            <p className="my-3 font-semibold">{song.title}</p>
             <audio
               className="hidden"
               ref={audioRef}
@@ -34,18 +34,16 @@ const App = () => {
               controls
             ></audio>
             <div className="flex justify-center items-center pb-2">
-              <button className="font-bold cursor-pointer text-3xl mt-1 mr-2">
+              <button className="font-bold cursor-pointer text-3xl mr-2">
                 ⏮️
               </button>
               <button
-                className="font-bold cursor-pointer text-3xl mt-1 mr-2"
+                className="font-bold cursor-pointer text-3xl  mr-2"
                 onClick={togglePlay}
               >
                 {isPlaying ? "⏸️" : "▶️"}
               </button>
-              <button className="font-bold cursor-pointer text-3xl mt-1">
-                ⏭️
-              </button>
+              <button className="font-bold cursor-pointer text-3xl">⏭️</button>
             </div>
           </div>
         );
